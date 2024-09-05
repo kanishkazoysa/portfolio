@@ -83,3 +83,10 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+/* Add the background image */
+.bg-explosion {
+  background-image: url('/bg-explosion.png');
+  background-size: cover;
+  background-position: center;
+}
