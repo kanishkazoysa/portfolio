@@ -8,21 +8,23 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10 relative" id="contact">
       <div className="flex flex-col md:flex-row justify-between items-start pb-40">
         <div className="flex flex-col items-start w-full md:w-1/2 z-10">
-          <h1 className="heading lg:max-w-[45vw] text-left !text-start">
+          <h1 className="heading lg:max-w-[45vw] items-center md:text-left">
             Ready to take <span className="text-purple">your</span> digital
             presence to the next level?
           </h1>
-          <p className="text-white-200 md:mt-10 my-5 text-left !text-start w-full">
+          <p className="text-white-200 md:mt-10 my-5 items-center text-center md:text-left w-full">
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
-          <a href="mailto:kanishkazoysa1234@gmail.com" className="self-start">
-            <MagicButton
-              title="Let's get in touch"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="w-full flex justify-center md:justify-start"> {/* Center button on small devices */}
+            <a href="mailto:kanishkazoysa1234@gmail.com">
+              <MagicButton
+                title="Let's get in touch"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
 
         <div className="md:w-1/2 h-[500px] absolute right-0 top-0 bottom-0">
