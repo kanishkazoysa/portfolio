@@ -6,17 +6,17 @@ import MagicButton from "./ui/MagicButton";
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 relative" id="contact">
-      <div className="flex flex-col md:flex-row justify-between items-center pb-40">
-        <div className="flex flex-col items-center md:items-start md:w-1/2 z-10">
-          <h1 className="heading lg:max-w-[45vw]">
+      <div className="flex flex-col md:flex-row justify-between items-start pb-40">
+        <div className="flex flex-col items-start w-full md:w-1/2 z-10">
+          <h1 className="heading lg:max-w-[45vw] text-left !text-start">
             Ready to take <span className="text-purple">your</span> digital
             presence to the next level?
           </h1>
-          <p className="text-white-200 md:mt-10 my-5 text-center md:text-left">
+          <p className="text-white-200 md:mt-10 my-5 text-left !text-start w-full">
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
-          <a href="mailto:kanishkazoysa1234@gmail.com">
+          <a href="mailto:kanishkazoysa1234@gmail.com" className="self-start">
             <MagicButton
               title="Let's get in touch"
               icon={<FaLocationArrow />}

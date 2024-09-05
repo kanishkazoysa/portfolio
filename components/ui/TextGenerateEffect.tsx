@@ -11,7 +11,8 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  let linesArray = words.split("\n");
+
   useEffect(() => {
     animate(
       "span",
@@ -25,19 +26,21 @@ export const TextGenerateEffect = ({
     );
   }, [scope.current]);
 
-  const renderWords = () => {
+  const renderLines = () => {
     return (
       <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className={`${idx > 2 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
+        {linesArray.map((line, lineIdx) => (
+          <div key={lineIdx}>
+            {line.split(" ").map((word, wordIdx) => (
+              <motion.span
+                key={word + wordIdx}
+                className={`${wordIdx > 2 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
+              >
+                {word}{" "}
+              </motion.span>
+            ))}
+          </div>
+        ))}
       </motion.div>
     );
   };
@@ -45,8 +48,8 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="my-4">
-        <div className=" dark:text-white text-black  leading-snug tracking-wide">
-          {renderWords()}
+        <div className="dark:text-white text-black leading-snug tracking-wide">
+          {renderLines()}
         </div>
       </div>
     </div>

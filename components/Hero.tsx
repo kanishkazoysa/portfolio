@@ -24,13 +24,16 @@ const Hero = () => {
             <div className='flex flex-row w-full'>
                 <div className='flex relative my-20 z-10 flex-1 w-1/3'>
                     <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col'>
-                        <TextGenerateEffect
-                            className='text-[10px] md:text-3xl lg:text-4xl'
-                            words='Hi, I m Kanishka'
-                        />
-                        <p className='md:tracking-wider mb-8 text-sm md:text-lg lg-text-2xl'>
-                            A Full Stack Developer
-                        </p>
+                    <div className='space-y-1 mb-10'> {/* Container to reduce vertical gap */}
+                            <TextGenerateEffect
+                                className='text-[10px] md:text-3xl lg:text-4xl'
+                                words='Hi, I m Kanishka'
+                            />
+                            <TextGenerateEffect
+                                className='text-[5px] md:text-1xl lg:text-2xl'
+                                words='A Full Stack Developer'
+                            />
+                        </div>
                         <TextGenerateEffect
                             className='text-[30px] md:text-5xl lg:text-6xl'
                             words='Transforming Concepts into User Experience'
