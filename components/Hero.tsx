@@ -27,7 +27,7 @@ const Hero = () => {
                         <div className='space-y-1 mb-10'> {/* Container to reduce vertical gap */}
                             <TextGenerateEffect
                                 className='text-[30px] md:text-3xl lg:text-4xl'
-                                words='Hi, I m Kanishka'
+                                words='Hi, I am Kanishka'
                             />
                             <TextGenerateEffect
                                 className='text-[20px] md:text-1xl lg:text-2xl'
