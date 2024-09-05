@@ -22,15 +22,15 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-row w-full'>
-                <div className='flex relative my-20 z-10 flex-1 w-1/3'>
+                <div className='flex relative my-20 z-10 flex-1 w-full md:w-1/3 text-center lg:text-left'> {/* Center-align text */}
                     <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col'>
-                    <div className='space-y-1 mb-10'> {/* Container to reduce vertical gap */}
+                        <div className='space-y-1 mb-10'> {/* Container to reduce vertical gap */}
                             <TextGenerateEffect
-                                className='text-[10px] md:text-3xl lg:text-4xl'
+                                className='text-[30px] md:text-3xl lg:text-4xl'
                                 words='Hi, I m Kanishka'
                             />
                             <TextGenerateEffect
-                                className='text-[5px] md:text-1xl lg:text-2xl'
+                                className='text-[20px] md:text-1xl lg:text-2xl'
                                 words='A Full Stack Developer'
                             />
                         </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div className='flex relative my-20 z-10 flex-1 w-2/3 '>
+                <div className='hidden md:flex relative my-20 z-10 flex-1 w-2/3'> {/* Hide on small devices */}
                     {/* Content here */}
                 </div>
             </div>
