@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
     name: string; // Display the name below the icon
   }[];
   direction?: "left" | "right";
-  speed?: "very-fast" | "fast" | "normal" | "slow";
+  speed?: "very-fast" | "fast" | "normal" | "slow" | "very-slow";
   pauseOnHover?: boolean;
   className?: string;
 }) => {
@@ -64,18 +64,27 @@ export const InfiniteMovingCards = ({
 
   const getSpeed = () => {
     if (containerRef.current) {
-      if (speed === "very-fast") {
-        containerRef.current.style.setProperty("--animation-duration", "5s"); // Very fast
-      } else if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "10s"); // Fast
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "20s"); // Normal
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "70s"); // Slow
+      switch (speed) {
+        case "very-fast":
+          containerRef.current.style.setProperty("--animation-duration", "20s");
+          break;
+        case "fast":
+          containerRef.current.style.setProperty("--animation-duration", "40s");
+          break;
+        case "normal":
+          containerRef.current.style.setProperty("--animation-duration", "60s");
+          break;
+        case "slow":
+          containerRef.current.style.setProperty("--animation-duration", "80s");
+          break;
+        case "very-slow":
+          containerRef.current.style.setProperty("--animation-duration", "200s");
+          break;
+        default:
+          containerRef.current.style.setProperty("--animation-duration", "60s");
       }
     }
   };
-
   return (
     <div
       ref={containerRef}
