@@ -37,7 +37,7 @@ const techStackIcons = [
 
 const TechStack = () => {
   return (
-    <section id="techstack" className="py-10">
+    <section className="py-10">
       <h1 className="heading">
         My <span className="text-purple">Tech Stack</span>
       </h1>
