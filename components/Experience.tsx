@@ -5,6 +5,7 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
+    <section id="experience">
     <div className="py-5 w-full">
       <h1 className="heading">
         My <span className="text-purple">experience</span>
@@ -43,6 +44,7 @@ const Experience = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

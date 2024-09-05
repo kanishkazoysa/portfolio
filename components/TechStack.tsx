@@ -35,9 +35,9 @@ const techStackIcons = [
   // Add more tech stack icons as needed
 ];
 
-const Clients = () => {
+const TechStack = () => {
   return (
-    <section id="testimonials" className="py-10">
+    <section id="techstack" className="py-10">
       <h1 className="heading">
         My <span className="text-purple">Tech Stack</span>
       </h1>
@@ -55,4 +55,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default TechStack;
