@@ -84,6 +84,8 @@ export const projects = [
     des: "I'm a diligent professional with a passion for continual learning and growth. Leveraging my expertise in React, Node.js, TypeScript, and Express, I recently developed a social media web application on the Appwrite cloud platform. By incorporating Tailwind CSS and ShadowCSS libraries, I ensured seamless responsiveness across all devices.",
     img: "/insta.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    githubLink: "https://github.com/kanishkazoysa/Insta.git",
+    liveLink: "https://insta-mocha.vercel.app/",
     
   },
   {
@@ -92,6 +94,8 @@ export const projects = [
     des: "The integration of automation systems into indoor hydroponic setups holds the key to unlocking even greater agricultural efficiency. By harnessing the power of automation,we can met culously fine-tune the conditions in which plants grow, ensuring optimal nutrient delivery, precise pH control, and a table, controlled environment(temperature,tds,light etc.).",
     img: "/hardware.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    githubLink: "https://github.com/kanishkazoysa/FieldMaster.git",
+    liveLink: "https://field-master-frontend.vercel.app/",
     
   },
   {
@@ -100,6 +104,7 @@ export const projects = [
     des: "The Expense Tracker Web Application is a user-friendly tool designed to simplify personal finance management. The application allows users to,Add Incomes and Expenses,Automatic Balance Calculation,Graphical Charts to visualize your financial health with clear and intuitive charts that make understanding your spending patterns easier.",
     img: "/e-tracker.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    githubLink: "https://github.com/kanishkazoysa/Expense-Tracker.git",
     
   },
   {
@@ -108,6 +113,7 @@ export const projects = [
     des: "I developed an interactive 3D T-shirt customization web application using Three.js, React, and Valtio for state management. The application allows users to personalize a T-shirt by changing its color, adding logos, and applying textures. The 3D models are dynamically rendered, providing a seamless user experience.",
     img: "/3d-tshirt.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    githubLink: "https://github.com/kanishkazoysa/three.js-product-app.git",
     
   },
   {
@@ -116,6 +122,7 @@ export const projects = [
     des: "I'm working on this project. this project same as the Uber/Pick-me platforms. This project is a mobile application that connects passengers with drivers for safe and convenient transportation. The application features real-time tracking, secure payment processing, and user-friendly interfaces for both passengers and drivers.",
     img: "/workingontext.png ",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    githubLink: "https://github.com/kanishkazoysa?tab=repositories",
     
   },
 ];

@@ -47,7 +47,7 @@ const RecentProjects: React.FC = () => {
             <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-16 mt-10'>
                 {projects.map(({ id, title, des, img, iconLists, githubLink, liveLink }: Project) => (
                     <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
-                        <PinContainer title={liveLink}>
+                        <PinContainer title={liveLink || githubLink}>
                             {liveLink ? (
                                 <Link href={liveLink} passHref legacyBehavior>
                                     <a target="_blank" rel="noopener noreferrer" className="block w-full h-full">
