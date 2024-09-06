@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaPhone, FaDownload } from "react-icons/fa6";
 import GlobeDemo from "./ui/GridGlobeFooter";
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
@@ -28,6 +28,21 @@ const Footer = () => {
               />
             </a>
           </div>
+          <div className="w-full flex justify-center md:justify-start"> {/* Center resume button on small devices */}
+            <a href="/cv.pdf" download className="flex items-center text-white-200">
+              <MagicButton
+                title="Download Resume"
+                icon={<FaDownload />}
+                position="right"
+              />
+            </a>
+          </div>
+          <div className="w-full flex justify-center md:justify-start mt-5"> {/* Center phone number on small devices */}
+            <a href="tel:+94712211162" className="flex items-center text-white-200 mt-5">
+              <FaPhone className="mr-2" />
+              +94 (71) 221-1162
+            </a>
+          </div>
         </div>
 
         <div className="hidden md:mt-5 md:block md:w-1/2 h-[500px] absolute right-0 top-0 bottom-0"> {/* Hidden on small devices */}
@@ -41,12 +56,13 @@ const Footer = () => {
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
+            <a key={info.id} href={info.link} target="_blank" rel="noopener noreferrer">
+              <div
+                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              >
+                <img src={info.img} alt="icons" width={20} height={20} />
+              </div>
+            </a>
           ))}
         </div>
       </div>

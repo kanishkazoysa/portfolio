@@ -177,13 +177,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/kanishkazoysa",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/fb.png",
+    link: "https://www.facebook.com/kanishka.lakshan.9237",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/kanishka-zoysa-2279422a7/",
   },
 ];
