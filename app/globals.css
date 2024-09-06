@@ -104,7 +104,7 @@
   position: absolute;
   width: 350px; /* Smaller than the circle */
   height: 350px;
-  background-image: url('/logo.png');
+  background-image: url('/coverimg.png');
   background-size: cover;
   border-radius: 50%;
   z-index: 2; /* Ensure the logo is above the ring */
