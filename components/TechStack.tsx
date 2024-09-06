@@ -37,13 +37,13 @@ const techStackIcons = [
 
 const TechStack = () => {
   return (
-    <section className="py-10">
-      <h1 className="heading">
+    <section className="py-5">
+      <h1 className="heading text-2xl md:text-4xl">
         My <span className="text-purple">Tech Stack</span>
       </h1>
 
-      <div className="flex flex-col items-center max-lg:mt-10">
-        <div className="h-[40vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+      <div className="flex flex-col items-center max-lg:mt-5">
+        <div className="h-[30vh] md:h-[20rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={techStackIcons}
             direction="right"

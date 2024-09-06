@@ -92,7 +92,7 @@ export const InfiniteMovingCards = ({
         "scroller relative z-20 w-full overflow-hidden mx-auto", // Modified width to 100% and center the section
         className
       )}
-      style={{ maxWidth: "1400px" }} // Reduced maxWidth to 800px for a narrower section
+      style={{ maxWidth: "1200px" }} // Reduced maxWidth to 800px for a narrower section
     >
       <ul
         ref={scrollerRef}

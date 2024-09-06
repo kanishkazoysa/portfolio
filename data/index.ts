@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 1,
     title: "Land Measuring and Management Application",
-    des: "Fieldmaster is an innovative software solution designed to streamline land management by integrating advanced mapping technology with robust calculation algorithms. This comprehensive application consolidates multiple essential functions into a single, user-friendly platform, making land measurement and planning more efficient and accessible.",
+    des: "Fieldmaster is an innovative software solution designed to streamline land management by integrating advanced mapping technology with robust calculation algorithms. This comprehensive application consolidates multiple essential functions into a single, user-friendly platform.",
     img: "/fieldmaster.png",
     iconLists: ["/re.svg", "/tail.svg", "/js.png", "/expo.png", "/nodejs.png", "/mongoDb.png","/GCP.png","/css.png"],
     githubLink: "https://github.com/kanishkazoysa/FieldMaster.git",
@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "Insta - Social Media Web App",
-    des: "I'm a diligent professional with a passion for continual learning and growth. Leveraging my expertise in React, Node.js, TypeScript, and Express, I recently developed a social media web application on the Appwrite cloud platform. By incorporating Tailwind CSS and ShadowCSS libraries, I ensured seamless responsiveness across all devices.",
+    des: "I'm a diligent professional with a passion for continual learning and growth. Leveraging my expertise in React, Node.js, TypeScript, and Express, I recently developed a social media web application on the Appwrite cloud platform. By incorporating Tailwind CSS and ShadowCSS libraries.",
     img: "/insta.png",
     iconLists: ["/nodejs.png", "/tail.svg", "/ts.svg", "/react.png", "/appwrite.png","/vite.png"],
     githubLink: "https://github.com/kanishkazoysa/Insta.git",
@@ -91,7 +91,7 @@ export const projects = [
   {
     id: 3,
     title: "Automated Hydroponic Farming Chamber",
-    des: "The integration of automation systems into indoor hydroponic setups holds the key to unlocking even greater agricultural efficiency. By harnessing the power of automation,we can met culously fine-tune the conditions in which plants grow, ensuring optimal nutrient delivery, precise pH control, and a table, controlled environment(temperature,tds,light etc.).",
+    des: "The integration of automation systems into indoor hydroponic setups holds the key to unlocking even greater agricultural efficiency. By harnessing the power of automation,we can met culously fine-tune the conditions in which plants grow,precise pH control,controlled temperature,tds,light,humidity etc.",
     img: "/hardware.png",
     iconLists: ["/arduino.png","/c.png"],
     // githubLink: "https://www.linkedin.com/in/kanishka-zoysa-2279422a7/details/projects/",
@@ -101,7 +101,7 @@ export const projects = [
   {
     id: 4,
     title: "Expense Tracker Web Application",
-    des: "The Expense Tracker Web Application is a user-friendly tool designed to simplify personal finance management. The application allows users to,Add Incomes and Expenses,Automatic Balance Calculation,Graphical Charts to visualize your financial health with clear and intuitive charts that make understanding your spending patterns easier.",
+    des: "The Expense Tracker Web Application is a user-friendly tool designed to simplify personal finance management.Add Incomes and Expenses,Automatic Balance Calculation,Graphical Charts to visualize your financial health with clear and intuitive charts that make understanding your spending patterns easier.",
     img: "/e-tracker.png",
     iconLists: ["/c1.png", "/net.png", "/tail.svg","/mysql.png"],
     githubLink: "https://github.com/kanishkazoysa/Expense-Tracker.git",

@@ -39,12 +39,12 @@ const RecentProjects: React.FC = () => {
     };
 
     return (
-        <div className='py-20' id="projects">
-            <h1 className='heading'>
+        <div className='py-10' id="projects">
+            <h1 className='heading text-2xl md:text-4xl'>
                 A small selection of {''}
                 <span className='text-purple'>recent projects</span>
             </h1>
-            <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-16 mt-10'>
+            <div className='flex flex-wrap items-center justify-center gap-x-20 p-4 gap-y-20 lg:gap-y-0 mt-10'>
                 {projects.map(({ id, title, des, img, iconLists, githubLink, liveLink }: Project) => (
                     <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
                         <PinContainer title={liveLink || githubLink}>
@@ -73,7 +73,7 @@ const RecentProjects: React.FC = () => {
 
 const ProjectContent: React.FC<ProjectContentProps> = ({ title, des, img }) => (
     <>
-        <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
+        <div className='relative flex items-center justify-center sm:w-[500px] w-[70vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
                 <img src='/bg.png' alt="bg-img" />
             </div>
@@ -83,7 +83,7 @@ const ProjectContent: React.FC<ProjectContentProps> = ({ title, des, img }) => (
                 className='z-10 absolute bottom-0'
             />
         </div>
-        <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
+        <h1 className='font-bold lg:text-1xl md:text-xl text-base line-clamp-1'>
             {title}
         </h1>
         <p className='lg:text-md lg:font-normal font-light text-sm line-clamp-5 text-justify mt-5'>{des}</p>

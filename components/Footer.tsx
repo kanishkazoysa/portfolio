@@ -5,13 +5,13 @@ import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10 relative" id="contact">
-      <div className="flex flex-col md:flex-row justify-between items-start pb-40">
+    <footer className="w-full pt-20 pb-5 relative" id="contact">
+      <div className="flex flex-col md:flex-row justify-between items-start pb-20">
         <div className="block md:hidden w-full h-[300px] mb-10"> {/* Visible only on small devices */}
           <GlobeDemo />
         </div>
-        <div className="flex flex-col items-start w-full md:w-1/2 z-10">
-          <h1 className="heading lg:max-w-[45vw] items-center md:text-left">
+        <div className="flex flex-col items-start max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] lg:ml-20 z-10">
+          <h1 className="heading text-3xl md:text-5xl lg:max-w-[35vw] items-center md:text-left lg:ml-30">
             Ready to take <span className="text-purple">your</span> digital
             presence to the next level?
           </h1>
@@ -27,9 +27,8 @@ const Footer = () => {
                 position="right"
               />
             </a>
-          </div>
-          <div className="w-full flex justify-center md:justify-start"> {/* Center resume button on small devices */}
-            <a href="/cv.pdf" download className="flex items-center text-white-200">
+           {/* Center resume button on small devices */}
+            <a href="/cv.pdf" download className="flex items-center ml-10 text-white-200">
               <MagicButton
                 title="Download Resume"
                 icon={<FaDownload />}
@@ -45,16 +44,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden md:mt-5 md:block md:w-1/2 h-[500px] absolute right-0 top-0 bottom-0"> {/* Hidden on small devices */}
+        <div className="hidden md:mt-5 md:block md:w-1/2 h-[500px] lg:ml-10 absolute right-0 top-0 bottom-0"> {/* Hidden on small devices */}
           <GlobeDemo />
         </div>
       </div>
-      <div className="flex mt-16  md:flex-row flex-col justify-between items-center relative z-10">
+      <div className="flex lg:mt-16 md:flex-row flex-col justify-between items-center relative z-10">
         <p className="md:text-base text-sm md:font-normal font-light mb-2">
           Copyright © 2024 Kanishka Zoysa
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center  md:gap-3 gap-6 lg:mr-20">
           {socialMedia.map((info) => (
             <a key={info.id} href={info.link} target="_blank" rel="noopener noreferrer">
               <div

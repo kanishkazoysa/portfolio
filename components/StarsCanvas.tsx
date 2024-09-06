@@ -7,7 +7,7 @@ import * as THREE from "three";
 
 const Stars = (props: any) => {
   const ref = useRef<THREE.Points>(null!);
-  const [sphere] = useState(() => random.inSphere(new Float32Array(10000), { radius: 1.2 })); // Increased number of points
+  const [sphere] = useState(() => random.inSphere(new Float32Array(100000), { radius: 1.2 })); // Increased number of points
 
   useFrame((state, delta) => {
     if (ref.current) {
@@ -22,7 +22,7 @@ const Stars = (props: any) => {
         <PointMaterial
           transparent
           color='#f272c8'
-          size={0.0009} // Reduced size
+          size={0.0004} // Reduced size
           sizeAttenuation={true}
           depthWrite={false}
         />
