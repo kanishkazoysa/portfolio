@@ -71,35 +71,52 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Land Measuring and Management Application",
+    des: "Fieldmaster is an innovative software solution designed to streamline land management by integrating advanced mapping technology with robust calculation algorithms. This comprehensive application consolidates multiple essential functions into a single, user-friendly platform, making land measurement and planning more efficient and accessible.",
+    img: "/fieldmaster.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    githubLink: "https://github.com/kanishkazoysa/FieldMaster.git",
+    liveLink: "https://field-master-frontend.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Insta - Social Media Web App",
+    des: "I'm a diligent professional with a passion for continual learning and growth. Leveraging my expertise in React, Node.js, TypeScript, and Express, I recently developed a social media web application on the Appwrite cloud platform. By incorporating Tailwind CSS and ShadowCSS libraries, I ensured seamless responsiveness across all devices.",
+    img: "/insta.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Automated Hydroponic Farming Chamber",
+    des: "The integration of automation systems into indoor hydroponic setups holds the key to unlocking even greater agricultural efficiency. By harnessing the power of automation,we can met culously fine-tune the conditions in which plants grow, ensuring optimal nutrient delivery, precise pH control, and a table, controlled environment(temperature,tds,light etc.).",
+    img: "/hardware.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "Expense Tracker Web Application",
+    des: "The Expense Tracker Web Application is a user-friendly tool designed to simplify personal finance management. The application allows users to,Add Incomes and Expenses,Automatic Balance Calculation,Graphical Charts to visualize your financial health with clear and intuitive charts that make understanding your spending patterns easier.",
+    img: "/e-tracker.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    
+  },
+  {
+    id: 5,
+    title: "3D - Tshirt Design Web Application",
+    des: "I developed an interactive 3D T-shirt customization web application using Three.js, React, and Valtio for state management. The application allows users to personalize a T-shirt by changing its color, adding logos, and applying textures. The 3D models are dynamically rendered, providing a seamless user experience.",
+    img: "/3d-tshirt.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    
+  },
+  {
+    id: 6,
+    title: "Ride - Passenger Transportation Mobile Application",
+    des: "I'm working on this project. this project same as the Uber/Pick-me platforms. This project is a mobile application that connects passengers with drivers for safe and convenient transportation. The application features real-time tracking, secure payment processing, and user-friendly interfaces for both passengers and drivers.",
+    img: "/workingontext.png ",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    
   },
 ];
 
