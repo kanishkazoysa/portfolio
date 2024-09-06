@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
@@ -47,8 +48,13 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div className='hidden md:flex relative my-20 z-10 flex-1 w-2/3'> {/* Hide on small devices */}
-                    {/* Content here */}
+                <div className='hidden md:flex relative my-20 z-10 flex-1 w-2/3 justify-center items-center '> {/* Hide on small devices */}
+                    <div className="circle">
+                        <div className="ring"></div>
+                        <div className="outer-ring"></div>
+                        <div className="logo"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
