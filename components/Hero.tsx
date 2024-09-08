@@ -4,6 +4,7 @@ import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
+import CustomAnimatedButton from './ui/MagicButton';
 
 const Hero = () => {
     return (
@@ -48,10 +49,14 @@ const Hero = () => {
                             words='Transforming Concepts into User Experience'
                         />
                         <a href='#about'>
-                            <MagicButton
+                        <CustomAnimatedButton
                                 title="Show my work"
                                 icon={<FaLocationArrow />}
-                                position='right'
+                                iconPosition='right'
+                                className="mt-4 lg:w-1/3 "
+                                borderColors={['#E2CBFF', '#393BB2', '#E2CBFF']}
+                                backgroundColor="bg-slate-950"
+                                textColor="text-white"
                             />
                         </a>
                     </div>

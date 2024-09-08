@@ -18,6 +18,7 @@ import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import CustomAnimatedButton from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -173,13 +174,15 @@ export const BentoGridItem = ({
               <Lottie options={defaultOptions} />
             </div>
 
-            <MagicButton
-              title={copied ? "Copied!" : "Copy my email"}
-              icon={<IoCopyOutline />}
-              position="left"
-              handleClick={handleCopy}
-              otherClasses="!bg-[#161A31]"
-            />
+            <CustomAnimatedButton
+            title={copied ? "Copied!" : "Copy my email"}
+            icon={<IoCopyOutline />}
+            iconPosition="left"
+            onClick={handleCopy}
+            className="w-3/4 md:w-auto mt-2 lg:mt-5"
+            backgroundColor="bg-[#161A31]"
+            borderColors={['#E2CBFF', '#393BB2', '#E2CBFF']}
+          />
           </div>
         )}
       </div>
