@@ -93,8 +93,8 @@
 
 .circle {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,8 +102,8 @@
 
 .logo {
   position: absolute;
-  width: 350px; /* Smaller than the circle */
-  height: 350px;
+  width: 250px; /* Smaller than the circle */
+  height: 250px;
   background-image: url('/coverimg.png');
   background-size: cover;
   border-radius: 50%;
@@ -112,8 +112,8 @@
 
 .ring {
   position: absolute;
-  width: 400px; /* Same size as .circle to ensure same origin */
-  height: 400px;
+  width: 200px; /* Same size as .circle to ensure same origin */
+  height: 200px;
   border-radius: 50%;
   background: conic-gradient(
     from 0deg,
@@ -129,8 +129,8 @@
 
 .outer-ring {
   position: absolute;
-  width: 450px; /* Larger than .ring */
-  height: 450px;
+  width: 250px; /* Larger than .ring */
+  height: 250px;
   border-radius: 50%;
   background: conic-gradient(
     from 0deg,
@@ -160,4 +160,12 @@
   100% {
     transform: rotate(-360deg); /* Rotate in the opposite direction */
   }
+}
+
+.glass-text {
+  font-size: 1rem; /* Adjust as needed */
+  color: transparent;
+  background: rgba(240, 230, 230, 0.404);
+  -webkit-background-clip: text;
+  backdrop-filter: blur(5px);
 }

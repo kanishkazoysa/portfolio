@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             <div className='flex flex-col lg:flex-row w-full '>
-                <div className='flex relative  z-10 flex-1 w-full lg:w-1/3 text-center lg:text-left'> {/* Center-align text */}
+                <div className='flex relative z-10 flex-1 w-full lg:w-1/3 text-center lg:text-left'> {/* Center-align text */}
                     <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] lg:ml-20 flex flex-col'>
                         <div className='space-y-1 mb-5'> {/* Container to reduce vertical gap */}
                             <TextGenerateEffect
@@ -48,11 +48,19 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div className='hidden md:flex relative my-20 z-10 flex-1 w-full lg:w-2/3 justify-center items-center '> {/* Hide on small devices */}
-                    <div className="circle">
+                <div className='hidden md:flex relative my-20 z-10 flex-1 w-full lg:w-2/3 justify-center items-center flex-col'> {/* Hide on small devices */}
+                    <div className="circle mb-10">
                         <div className="ring"></div>
                         <div className="outer-ring"></div>
                         <div className="logo"></div>
+                    </div>
+                    {/* Description Section */}
+                    <div className='mt-20 w-3/5'>
+                        <p className='text-sm md:text-base lg:text-sm text-justify glass-text'>
+                        I am an undergraduate of University of Moratuwa , eager to leverage my academic knowledge and practical skills 
+                        in real-world scenarios. With a strong foundation in software engineering and proven leadership experience, 
+                        adaptable and collaborative, focused on meeting organizational goals to be a professional person.
+                        </p>
                     </div>
                 </div>
             </div>
