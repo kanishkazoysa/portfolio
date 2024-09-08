@@ -170,6 +170,15 @@
   backdrop-filter: blur(5px);
 }
 
+/* styles.css */
+
+/* General styles */
+.magic-button {
+  font-size: 1rem;
+  padding: 0.1rem 0.1rem;
+}
+
+/* Small screens (max-width: 640px) */
 @media (max-width: 640px) {
   .magic-button {
       font-size: 0.875rem; /* Adjust font size for better visibility */
@@ -178,5 +187,13 @@
 
   .magic-button .icon {
       display: none; /* Optionally hide the icon on small screens */
+  }
+}
+
+/* iOS specific styles */
+@supports (-webkit-touch-callout: none) {
+  .magic-button {
+      backdrop-filter: none; /* Disable backdrop-filter on iOS */
+      background: rgba(240, 230, 230, 0.9); /* Adjust background for better visibility */
   }
 }
