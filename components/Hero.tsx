@@ -26,6 +26,14 @@ const Hero = () => {
                 <div className='flex relative z-10 flex-1 w-full lg:w-1/3 text-center lg:text-left'> {/* Center-align text */}
                     <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] lg:ml-20 flex flex-col'>
                         <div className='space-y-1 mb-5'> {/* Container to reduce vertical gap */}
+                {/* Profile ring for small devices */}
+                <div className='flex md:hidden justify-center items-center w-full mt-20 mb-20'>
+                    <div className="circle mb-10">
+                        <div className="ring"></div>
+                        <div className="outer-ring"></div>
+                        <div className="logo"></div>
+                    </div>
+                </div>
                             <TextGenerateEffect
                                 className='text-[30px] md:text-3xl lg:text-4xl'
                                 words='Hi, I am Kanishka'
@@ -48,6 +56,8 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
+
+
                 <div className='hidden md:flex relative my-20 z-10 flex-1 w-full lg:w-2/3 justify-center items-center flex-col'> {/* Hide on small devices */}
                     <div className="circle mb-10">
                         <div className="ring"></div>
