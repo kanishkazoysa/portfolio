@@ -44,7 +44,7 @@ const RecentProjects: React.FC = () => {
                 A small selection of {''}
                 <span className='text-purple'>recent projects</span>
             </h1>
-            <div className='flex flex-wrap items-center justify-center gap-x-20 p-4 gap-y-20 lg:gap-y-0 mt-10'>
+            <div className='flex flex-wrap items-center justify-center gap-x-20 p-4 gap-y-20 lg:gap-y-10 mt-10'>
                 {projects.map(({ id, title, des, img, iconLists, githubLink, liveLink }: Project) => (
                     <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
                         <PinContainer title={liveLink || githubLink}>
