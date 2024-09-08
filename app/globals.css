@@ -170,30 +170,44 @@
   backdrop-filter: blur(5px);
 }
 
-/* styles.css */
 
-/* General styles */
 .magic-button {
   font-size: 1rem;
   padding: 0.1rem 0.1rem;
 }
 
-/* Small screens (max-width: 640px) */
+.magic-button-content {
+  backdrop-filter: blur(3px);
+}
+
 @media (max-width: 640px) {
   .magic-button {
-      font-size: 0.875rem; /* Adjust font size for better visibility */
-      padding: 0.1rem 0.1rem; /* Adjust padding */
+    font-size: 0.875rem;
+    padding: 0.1rem 0.1rem;
   }
 
   .magic-button .icon {
-      display: none; /* Optionally hide the icon on small screens */
+    display: inline-flex; /* Changed from 'none' to ensure icon visibility */
+  }
+
+  .magic-button-text {
+    max-width: calc(100% - 2rem); /* Ensure text fits within button */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-/* iOS specific styles */
 @supports (-webkit-touch-callout: none) {
-  .magic-button {
-      backdrop-filter: none; /* Disable backdrop-filter on iOS */
-      background: rgba(240, 230, 230, 0.9); /* Adjust background for better visibility */
+  .magic-button-content {
+    backdrop-filter: none;
+    background: rgba(15, 23, 42, 0.9); /* Adjusted to match slate-950 */
+  }
+
+  .magic-button-bg {
+    opacity: 0.7; /* Reduce the opacity of the background animation */
+  }
+
+  .magic-button-text {
+    color: #ffffff; /* Ensure text is white and visible */
   }
 }
