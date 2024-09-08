@@ -130,22 +130,28 @@ const Card = ({
 
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
-    <div>
-      <button className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-        <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#FFD700_0%,#FF8C00_50%,#FFD700_100%)]" // New gradient
-        />
-        <span
-          className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-900 px-5 py-2 text-yellow-300 backdrop-blur-3xl font-bold text-2xl"
-        >
-          {order}
-        </span>
-      </button>
-    </div>
+    <button 
+      className="relative inline-flex overflow-hidden rounded-full p-[1.5px] focus:outline-none"
+    >
+      {/* Gradient Border */}
+      <span
+        className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite]" 
+        style={{
+          background: 'conic-gradient(from 90deg at 50% 50%, #FFD700 0%, #FF8C00 50%, #FFD700 100%)'
+        }}
+      />
+
+      {/* Button Content */}
+      <span
+        className="relative inline-flex h-full w-full items-center justify-center rounded-full bg-slate-900 px-5 py-2 text-yellow-300 font-bold text-2xl transition-all duration-300 ease-in-out hover:bg-opacity-80"
+      >
+        {order}
+      </span>
+    </button>
   );
 };
+
+
 
 export const Icon = ({ className, ...rest }: any) => {
   return (
