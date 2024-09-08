@@ -170,3 +170,13 @@
   backdrop-filter: blur(5px);
 }
 
+@media (max-width: 640px) {
+  .magic-button {
+      font-size: 0.875rem; /* Adjust font size for better visibility */
+      padding: 0.1rem 0.1rem; /* Adjust padding */
+  }
+
+  .magic-button .icon {
+      display: none; /* Optionally hide the icon on small screens */
+  }
+}
