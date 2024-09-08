@@ -129,7 +129,7 @@
 
 .outer-ring {
   position: absolute;
-  width: 250px; /* Larger than .ring */
+  width: 250px; 
   height: 250px;
   border-radius: 50%;
   background: conic-gradient(
