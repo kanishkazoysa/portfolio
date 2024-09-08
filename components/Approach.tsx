@@ -131,11 +131,11 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <button 
-      className="relative inline-flex overflow-hidden rounded-full p-[1.5px] focus:outline-none"
+      className="relative inline-flex overflow-hidden rounded-full p-[1.5px] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105"
     >
       {/* Gradient Border */}
       <span
-        className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite]" 
+        className="absolute inset-0 animate-[spin_4s_linear_infinite]" 
         style={{
           background: 'conic-gradient(from 90deg at 50% 50%, #FFD700 0%, #FF8C00 50%, #FFD700 100%)'
         }}
@@ -150,6 +150,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
     </button>
   );
 };
+
 
 
 
