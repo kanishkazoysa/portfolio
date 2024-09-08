@@ -170,44 +170,15 @@
   backdrop-filter: blur(5px);
 }
 
-
-.magic-button {
-  font-size: 1rem;
-  padding: 0.1rem 0.1rem;
-}
-
-.magic-button-content {
-  backdrop-filter: blur(3px);
-}
-
-@media (max-width: 640px) {
-  .magic-button {
-    font-size: 0.875rem;
-    padding: 0.1rem 0.1rem;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  .magic-button .icon {
-    display: inline-flex; /* Changed from 'none' to ensure icon visibility */
-  }
-
-  .magic-button-text {
-    max-width: calc(100% - 2rem); /* Ensure text fits within button */
-    overflow: hidden;
-    text-overflow: ellipsis;
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@supports (-webkit-touch-callout: none) {
-  .magic-button-content {
-    backdrop-filter: none;
-    background: rgba(15, 23, 42, 0.9); /* Adjusted to match slate-950 */
-  }
-
-  .magic-button-bg {
-    opacity: 0.7; /* Reduce the opacity of the background animation */
-  }
-
-  .magic-button-text {
-    color: #ffffff; /* Ensure text is white and visible */
-  }
+.custom-animated-button-border {
+  animation: spin 4s linear infinite;
 }

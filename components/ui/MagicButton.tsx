@@ -1,21 +1,44 @@
 import React from 'react';
 
-const MagicButton = ({ title, icon, position, handleClick, otherClasses }: {
-    title: string,
-    icon: React.ReactNode,
-    position: string,
-    handleClick?: () => void; otherClasses?: string;
+interface CustomAnimatedButtonProps {
+  title: string;
+  icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  onClick?: () => void;
+  className?: string;
+  borderColors?: string[];
+  backgroundColor?: string;
+  textColor?: string;
+}
+
+const CustomAnimatedButton: React.FC<CustomAnimatedButtonProps> = ({
+  title,
+  icon,
+  iconPosition = 'left',
+  onClick,
+  className = '',
+  borderColors = ['#E2CBFF', '#393BB2', '#E2CBFF'],
+  backgroundColor = 'bg-slate-950',
+  textColor = 'text-white'
 }) => {
-    return (
-        <button className={`relative inline-flex h-12 width-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10 magic-button ${otherClasses}`} onClick={handleClick}>
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-            <span className="inline-flex h-full w-full cursor-pointer gap-2 items-center justify-center rounded-lg bg-slate-950 px-7 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                {position === 'left' && <span className="icon">{icon}</span>}
-                {title}
-                {position === 'right' && <span className="icon">{icon}</span>}
-            </span>
-        </button>
-    );
+  const gradientStyle = `conic-gradient(from 90deg at 50% 50%, ${borderColors.join(', ')})`;
+
+  return (
+    <button 
+      className={`custom-animated-button relative inline-flex h-12 overflow-hidden rounded-lg p-[2px] focus:outline-none ${className}`} 
+      onClick={onClick}
+    >
+      <span 
+        className="custom-animated-button-border absolute inset-[-1000%] animate-[spin_4s_linear_infinite]" 
+        style={{ background: gradientStyle }}
+      />
+      <span className={`custom-animated-button-content relative inline-flex h-full w-full items-center justify-center rounded-lg ${backgroundColor} ${textColor} px-4 py-1 text-sm font-medium transition-all duration-300 ease-in-out hover:bg-opacity-80`}>
+        {iconPosition === 'left' && icon && <span className="mr-2">{icon}</span>}
+        <span className="whitespace-nowrap">{title}</span>
+        {iconPosition === 'right' && icon && <span className="ml-2">{icon}</span>}
+      </span>
+    </button>
+  );
 };
 
-export default MagicButton;
+export default CustomAnimatedButton;
