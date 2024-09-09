@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kanishka's Portfolio",
   description: "Modern web development portfolio of Kanishka",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-        </ThemeProvider></body>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
