@@ -95,7 +95,7 @@ export const projects = [
     img: "/hardware.png",
     iconLists: ["/arduino.png","/c.png"],
     // githubLink: "https://www.linkedin.com/in/kanishka-zoysa-2279422a7/details/projects/",
-    // liveLink: "https://www.linkedin.com/in/kanishka-zoysa-2279422a7/details/projects/",
+    liveLink: "https://www.linkedin.com/posts/kanishka-zoysa-2279422a7_exmo23-hardwareproject-hydroponics-activity-7241842644262264832-CywD?utm_source=share&utm_medium=member_desktop",
     
   },
   {
